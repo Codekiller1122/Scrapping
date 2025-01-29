@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sample HTML page with various tags">
+    <title>Sample HTML Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        article {
+            padding: 20px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: square;
+        }
+        ol {
+            list-style-type: decimal;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        a {
+            color: #0077cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Sample HTML Page</h1>
+        <nav>
+            <a href="#about">About</a> |
+            <a href="#services">Services</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <article>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>This is an example of a webpage that includes various HTML tags. You can learn how different tags work here!</p>
+            <p>HTML stands for HyperText Markup Language and is the standard language for creating webpages.</p>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Web Design</li>
+                <li>Web Development</li>
+                <li>SEO Optimization</li>
+                <li>Content Writing</li>
+            </ul>
+
+            <p>We offer a variety of services to meet your business needs. If you are interested in any of the services above, please reach out!</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or want to get in touch with us, use the following methods:</p>
+            <ol>
+                <li>Email: <a href="mailto:info@example.com">info@example.com</a></li>
+                <li>Phone: <a href="tel:+1234567890">+1234567890</a></li>
+                <li>Visit our office: <span>123 Business St, City, Country</span></li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Images and Media</h2>
+            <p>Here's an image of our team:</p>
+            <img src="https://via.placeholder.com/400" alt="Team Photo" width="400">
+            
+            <p>Check out this video too:</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+
+        <section>
+            <h2>Forms</h2>
+            <form action="/submit" method="POST">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br><br>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+    </article>
+
+    <footer>
+        <p>&copy; 2025 My Sample Website | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

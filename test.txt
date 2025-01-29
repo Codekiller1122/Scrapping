@@ -1,0 +1,18 @@
+import requests
+from bs4 import BeautifulSoup
+
+
+url = ("https://www.google.com")
+
+response = requests.get(url)
+
+if response.status_code == 200:
+  soup = beautifulSoup(response.text,'index.html')
+
+  h1_tag = soup.find("h1")
+  if h1_tag:
+     print("H1 tag", h1_tag.get_text())
+  else:
+     print("No h1 found")
+else:
+  print(f"Failed to retrieve pages {response.status_code}")     
